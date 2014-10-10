@@ -17,6 +17,7 @@
     "url": "https://github.com/JackTanRoo/BitClipLandingPage/issues"
   },
   "dependencies": {
-    "express": "~4.9.6"
+    "express": "~4.9.6",
+    "ejs": "~1.0.0"
   }
 }

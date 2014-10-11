@@ -1,2 +1,6 @@
 # Dependency directorys
 node_modules/
+gruntfile.js
+
+### bower install components ###
+public/lib

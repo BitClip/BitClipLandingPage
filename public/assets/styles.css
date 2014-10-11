@@ -1,0 +1,509 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900,400italic);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+/* ---------------------------------------------- */
+/*                    Colors                      */
+/* ---------------------------------------------- */
+/*----------------*/
+/*    Variables   */
+/*----------------*/
+/*----------------*/
+/*    Defaults    */
+/*----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  font-family: 'Cabin', sans-serif;
+  color: #0B0B0B;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0;
+  padding: 0;
+}
+
+nav.headerBar {
+  box-sizing: border-box;
+  position: relative;
+  width: 1020px;
+  margin: auto;
+  height: 5.4rem;
+  color: #35a5a7;
+  background-color: transparent;
+}
+nav.headerBar::after {
+  z-index: -1;
+  content: "";
+  width: 1020px;
+  position: absolute;
+  left: 0vw;
+  top: 5.275rem;
+}
+nav.headerBar div {
+  line-height: 5.4rem;
+  margin: 0 auto;
+}
+nav.headerBar div.bitClipTitle {
+  font-weight: 700;
+  font-size: 2.34rem;
+  float: left;
+  margin-left: 2.68rem;
+  letter-spacing: .2rem;
+  box-sizing: border-box;
+}
+nav.headerBar div.bitClipTitle img.bitClipLogo {
+  position: absolute;
+  height: 2.1574rem;
+  width: 2.1574rem;
+  z-index: 500;
+  margin: 0;
+  left: 0;
+  top: 1.6213rem;
+}
+nav.headerBar div.headerLinks {
+  float: right;
+  color: #35a5a7;
+  padding-left: 15px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 1.34rem;
+}
+nav.headerBar div.headerLinks a {
+  padding-left: 12px;
+  color: #35A5A7;
+  font-size: 2.34rem;
+}
+nav.headerBar div.headerLinks a:hover i {
+  border-bottom: 1px solid #35A5A7;
+}
+
+main.mainContainer {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+main.mainContainer .introContainerBackground {
+  width: 100%;
+  height: 622px;
+  background-color: #beeaea;
+  border-bottom: 1px solid #35A5A7;
+  border-top: 1px solid #35A5A7;
+}
+main.mainContainer .featuresContainerBackground {
+  width: 100%;
+  height: 622px;
+  background-color: #fbe4c2;
+  border-bottom: 1px solid #F1A533;
+  border-top: 1px solid #F1A533;
+}
+main.mainContainer div.introContainer {
+  height: 622px;
+  width: 1024px;
+  margin: auto;
+  background-color: transparent;
+}
+main.mainContainer div.introContainer div {
+  position: relative;
+  box-sizing: border-box;
+}
+main.mainContainer div.introContainer div.introInfo {
+  height: 200px;
+  position: relative;
+  left: 5%;
+  top: 10%;
+  z-index: 1;
+}
+main.mainContainer div.introContainer div.introInfo h1 {
+  display: block;
+  line-height: 8.35rem;
+  font-size: 3.34rem;
+  font-color: #0B0B0B;
+}
+main.mainContainer div.introContainer div.introInfo h3 {
+  width: 50%;
+  margin-top: 5.01rem;
+  margin-bottom: 1.34rem;
+  line-height: 2.68rem;
+  font-size: 1.34rem;
+  font-family: 'Merriweather', serif;
+}
+main.mainContainer div.introContainer div.introInfo button {
+  outline: none;
+  border: none;
+  position: relative;
+  margin-top: 5.01rem;
+  width: 20rem;
+  height: 3.34rem;
+  background-color: #F1A533;
+  color: white;
+  border-radius: 5px;
+  border-bottom: 4px solid #e28e0f;
+  font-size: 1.34rem;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+}
+main.mainContainer div.introContainer div.introInfo button .chromeDownloadLink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+main.mainContainer div.introContainer div.introInfo button:active {
+  top: .125rem;
+  height: 3.215rem;
+  border-bottom: none;
+}
+main.mainContainer div.introContainer div.introImage {
+  overflow: none;
+  height: 500px;
+  top: -121px;
+  background-color: transparent;
+  position: relative;
+}
+main.mainContainer div.introContainer div.introImage img {
+  height: 100%;
+  float: right;
+}
+main.mainContainer div.introContainer div.learnMoreDetail {
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+  width: 10rem;
+  height: 2.4rem;
+  z-index: 2;
+  background-color: white;
+  border: 1px solid #35A5A7;
+  border-radius: 4px;
+  color: #35A5A7;
+  text-align: center;
+  line-height: 2.4rem;
+}
+main.mainContainer div.introContainer div.learnMoreDetail span {
+  padding: 5px;
+}
+main.mainContainer div.introContainer div.learnMoreDetail i {
+  color: #4ac3c5;
+  font-size: .8rem;
+}
+main.mainContainer div.whyContainer {
+  width: 1024px;
+  height: 39rem;
+  margin: auto;
+  background-color: white;
+  clear: both;
+}
+main.mainContainer div.whyContainer .whyInfoTitle {
+  width: auto;
+  line-height: 7.2rem;
+  padding: 2.2rem auto;
+  margin-left: 30%;
+  text-align: center;
+  font-size: 2.34rem;
+}
+main.mainContainer div.whyContainer .whyInfoBody {
+  display: block;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 29.6rem;
+}
+main.mainContainer div.whyContainer .whyInfoBody .whyImage {
+  display: block;
+  position: relative;
+  background: url(images/bitclip_ReceiveView_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 455px;
+  height: 500px;
+  float: left;
+  top: -2.2rem;
+  left: 1rem;
+}
+main.mainContainer div.whyContainer .whyInfoBody .whyInfoDetails {
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 5%;
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+}
+main.mainContainer div.whyContainer .whyInfoBody .whyInfoDetails span {
+  width: 50%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+main.mainContainer div.featuresContainer {
+  width: 1024px;
+  height: 622px;
+  margin: auto;
+  padding-top: 2.2rem;
+  background-color: transparent;
+  border-bottom: 1px solid #35A5A7;
+  clear: both;
+}
+main.mainContainer div.featuresContainer .featuresTitle {
+  width: 70%;
+  line-height: 7.2rem;
+  margin-left: -15%;
+  text-align: center;
+  font-size: 2.34rem;
+}
+main.mainContainer div.featuresContainer .featuresBody {
+  display: block;
+  float: right;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 29.4rem;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresImage {
+  right: 1rem;
+  display: block;
+  position: relative;
+  background: url(images/bitclip_MarketView_Orange.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 455px;
+  height: 500px;
+  float: right;
+  top: -2.2rem;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresDetails {
+  width: 43%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 3%;
+  text-align: justify;
+  line-height: 5rem;
+  list-style-type: none;
+  right: 100px;
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresDetails li {
+  padding-left: 2.2rem;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresDetails li i {
+  position: absolute;
+  font-size: 2.34rem;
+  left: 3.34rem;
+  color: #F1A533;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresDetails li i.fa-lock {
+  top: 2.9rem;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresDetails li i.fa-user {
+  top: 7.9rem;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresDetails li i.fa-globe {
+  top: 12.9rem;
+}
+main.mainContainer div.featuresContainer .featuresBody .featuresDetails li i.fa-line-chart {
+  top: 18rem;
+  left: 3rem;
+}
+main.mainContainer div.walkthroughContainer {
+  width: 1024px;
+  height: 706px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 2.2rem;
+  padding-top: 2.2rem;
+  background-color: white;
+  clear: both;
+}
+main.mainContainer div.walkthroughContainer .walkthroughTitle {
+  display: block;
+  width: auto;
+  line-height: 7.2rem;
+  padding: 2.2rem auto;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 2.34rem;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps {
+  text-align: justify;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 15.5rem;
+  height: 5.4rem;
+  border-radius: 15px;
+  border: 2px solid #beeaea;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div i {
+  position: absolute;
+  color: #f4ba63;
+  right: -4.4rem;
+  font-size: 2.34rem;
+  top: 1.8rem;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div.walkthroughStep-1 {
+  margin-left: 25px;
+  background-color: #4ac3c5;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div.walkthroughStep-1 .stepText {
+  text-align: right;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div.walkthroughStep-2 {
+  background-color: #4ac3c5;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div.walkthroughStep-2 .stepText {
+  left: 3.5rem;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div.walkthroughStep-3 {
+  margin-right: 25px;
+  background-color: #4ac3c5;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div .stepNumber {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: .5rem;
+  left: 1rem;
+  color: #4ac3c5;
+  line-height: 2rem;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  background-color: white;
+  border: 1px solid #beeaea;
+  border-radius: 50%;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps div .stepText {
+  position: absolute;
+  top: .25rem;
+  left: 2.5rem;
+  color: white;
+  text-align: center;
+  letter-spacing: .1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+main.mainContainer div.walkthroughContainer .walkthroughSteps .stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+main.mainContainer div.walkthroughContainer .walkthroughImages {
+  text-align: justify;
+}
+main.mainContainer div.walkthroughContainer .walkthroughImages div {
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 330px;
+}
+main.mainContainer div.walkthroughContainer .walkthroughImages div.walkthroughImage-1 {
+  background: url(images/bitclip_ReceiveView_1.png);
+  background-size: 100% 100%;
+}
+main.mainContainer div.walkthroughContainer .walkthroughImages div.walkthroughImage-2 {
+  background: url(images/bitclip_SendView_1.png);
+  background-size: 100% 100%;
+  margin: auto;
+}
+main.mainContainer div.walkthroughContainer .walkthroughImages div.walkthroughImage-3 {
+  background: url(images/bitclip_HistoryView_1.png);
+  background-size: 100% 100%;
+}
+main.mainContainer div.walkthroughContainer .walkthroughImages .stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+main.mainContainer div.walkthroughContainer button {
+  outline: none;
+  border: none;
+  position: relative;
+  width: 20rem;
+  height: 4rem;
+  background-color: #F1A533;
+  color: white;
+  border-radius: 5px;
+  border-bottom: 4px solid #e28e0f;
+  left: 352px;
+  font-size: 1.34rem;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+}
+main.mainContainer div.walkthroughContainer button .chromeDownloadLink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+main.mainContainer div.walkthroughContainer button:active {
+  top: .125rem;
+  height: 3.875rem;
+  border-bottom: none;
+}
+
+div.footer {
+  width: 100%;
+  height: 3.34rem;
+  background: #35A5A7;
+  text-align: center;
+  line-height: 3.34rem;
+}
+div.footer .footerText {
+  color: white;
+  family: 'Merriweather';
+  size: 1.34rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  main.mainContainer div.introContainer {
+    width: 100vw;
+  }
+  main.mainContainer div.introContainer div {
+    width: 50vw;
+  }
+  main.mainContainer div.introContainer div.introInfo {
+    margin: 0;
+  }
+  main.mainContainer div.introContainer div.introInfo h1 {
+    position: absolute;
+    width: 100vh;
+  }
+  main.mainContainer div.introContainer div.introImage {
+    width: 100%;
+  }
+  main.mainContainer div.introContainer div.introImage img {
+    max-width: 50vw;
+    height: auto;
+  }
+  main.mainContainer div.whyContainer {
+    width: 100%;
+  }
+  main.mainContainer div.featuresContainer {
+    width: 100%;
+  }
+  main.mainContainer div.walkthroughContainer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
